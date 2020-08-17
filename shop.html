@@ -9,16 +9,12 @@
   	  <link rel="stylesheet" type="text/css" href="css/main.css">
   	  <link rel="stylesheet" type="text/css" href="css/chatmsg.css">
 
-  	  <!-- custom css for home page -->
-  	  <link rel="stylesheet" type="text/css" href="css/search.css">
-  	  <link rel="stylesheet" type="text/css" href="css/homecarousel.css">
-  	  <link rel="stylesheet" type="text/css" href="css/swipper-container.css">
-  	  <link rel="stylesheet" type="text/css" href="css/keyfeature.css">
-  	  <link rel="stylesheet" type="text/css" href="css/showcase.css">
-  	  <link rel="stylesheet" type="text/css" href="css/teaser.css">
+  	  <!-- custom css for shop page -->
+  	  <link rel="stylesheet" type="text/css" href="css/shoppage.css">
+  	  <link rel="stylesheet" type="text/css" href="css/shopfilter.css">
 
 </head>
-<body>
+<body class="s-filter--2019">
 	<div class="gnb js-mobile-open">
 		<div class="gnb__dimmed"></div>
 		<nav class="gnb__nav" role="navigation">
@@ -2722,8 +2718,203 @@
 	<!-- header -->
 
 	<!-- content layout -->
-	<div id="content" role="main">
+	<div class="cm-breadcrumb">
+	    <div class="cm-breadcrumb__inner">
+		    <ul class="cm-breadcrumb__path" vocab="http://schema.org/" typeof="BreadcrumbList">
+		        <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="/sg/"><span property="name">Home</span></a> /<meta property="position" content="1"></li>
+		        <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="/sg/mobile/"><span property="name">Mobile</span></a> /<meta property="position" content="2"></li>
+		        <li property="itemListElement" typeof="ListItem" id="pf-level3"><span property="name">Smartphones</span> /<meta property="position" content="3"></li>
+		        
+		        <li property="itemListElement" typeof="ListItem"><h1 property="name" class="pf-bc-title">All Smartphones</h1><meta property="position" content="4"></li>
+		    </ul>
+	    </div>
+	</div>
+	<div class="cm-page-title">
+	    <p>All Smartphones</p>
+	</div>
+
+	<div id="content" class="st-page-pf" role="main">
+		<div class="par parsys">
+			<div class="section pr-g-flagship-header">
+		        <section class="pr-flagship-header pr-flagship-header-pf s-text-white shop-header" data-filter-id="galaxy-s" data-default-header="true">
+		            <div class="pr-flagship-header__wrap">
+		                <div class="pr-flagship-header__content-wrap">
+		                    <div class="pr-flagship-header__content-inner">
+		                        <div class="pr-flagship-header__text">
+		                            
+		                            <h2 class="pr-flagship-header__logo">Galaxy <br />
+		S20 Ultra 5G</h2>
+		                            
+		                        </div>
+		                        
+		                    </div>
+		                </div>
+		                <div class="pr-flagship-header__img">
+		                    <picture>
+		                        <source srcset="images/pf-galaxy-s20-ultra-5g-black-mo-main.webp" media="(max-width:768px)">
+		                        <img alt="" data-src-mobile="images/pf-galaxy-s20-ultra-5g-black-mo-main.webp" src="images/pf-galaxy-s20-ultra-5g-black-pc-main-1.webp" data-src-pc="images/pf-galaxy-s20-ultra-5g-black-pc-main-1.webp" class="js-img-src">
+		                    </picture>
+		                </div>
+		            </div>
+		        </section>
+			
+			</div>
+		</div>
+
+	<!-- /* Progress Indicator */ -->
+	<div class="cm-progress-bar">
+		<div class="cm-progress-bar__loading"></div>
+	</div>
+	<!-- /* //Progress Indicator */ -->
+
+	<!-- product-filter-grid -->
+	<div class="filter-sort">
+		<div class="filter-sort__head-wrap">
+			<div class="filter-sort__head">
+			
+				<div class="filter-sort__head-title">
+					<span class="title-text">Filters</span> <span class="js-fs-item-cnt-all"></span>
+				</div>
+				
+				<button type="button" class="filter-sort__close-button">
+					<span class="blind">Close</span>
+				</button>
+				
+				<!--/* 검색결과 문구 : S */-->
+				<div class="filter-sort-info__results-text"></div>
+				<!--/* 검색결과 문구 : E */-->
+				
+				<div class="filter-sort__reset-button">
+					<button type="button" class="s-btn-text-underline">Reset Filters</button>
+				</div>
+				
+				<div class="filter-sort__xscroll-wrap">
+					
+					<!--/* 선택 된 필터 노출 영역 : S */-->
+					<div class="filter-sort-applied">
+						<p class="filter-sort-applied__title blind">Applied Filters</p>
+						<ul class="applied-list"></ul>
+					</div>
+					<!--/* 선택 된 필터 노출 영역 : E */-->
+				</div>
+				
+				<!--/* Sort By 영역 : S */-->
+				
+				<div class="filter-sort__filter-select">
+					<button type="button" class="filter-sort__link">sort by : <span>Newest</span><span class="filter-sort__arrow"><span class="blind">Expand</span></span></button>
+					<div class="filter-sort__sub-wrap">
+						<ul>
+							<li><button type="button" sort-id="newest" data-omni="newest"><span>Newest</span></button></li>
+							
+							<li><button type="button" sort-id="mostclicked" data-omni="mostclicked"><span>Most Clicked</span></button></li>
+							<li><button type="button" sort-id="recommended" data-omni="recommended"><span>Recommended</span></buttona></li>
+							
+						</ul>
+					</div>
+				</div>
+	
+				<div class="filter-sort__filter-select-mo">
+					<span class="filter-sort__filter-select-text">sort by<span>Newest</span></span>
+					<select>
+						<option sort-id="newest" value="newest" selected="selected">Newest</option>
+						
+						<option sort-id="mostclicked" value="mostclicked">Most Clicked</option>
+						<option sort-id="recommended" value="recommended">Recommended</option>
+						
+					</select>
+				</div>
+				
+				<!--/* Sort By 영역 : E */-->				
+			</div>
+		</div>
+	</div>
+	<!-- product-filter-grid -->
+
+	<!--/* content 영역 : S */-->
+	<div class="product-filter-grid">
 		
+		<!--/* 필터 영역 :: S */-->
+		<div class="filter-sort__list-wrap ">
+			<div class="filter-sort__list-inner">
+				<div class="filter-sort__list active">
+					<button type="button" class="filter-sort__list-title" data-omni="Class">
+						<span class="title-text">
+							Class
+							<span class="js-fs-item-cnt">
+								‎(1)‎
+							</span>
+						</span>
+						<span class="filter-sort__symbol">
+							<span class="blind">Collaps</span>
+						</span>
+					</button>
+					<div class="filter-sort__item">
+						<ul>
+							<li title="Galaxy Z">
+								<div class="filter-sort__checkbox" data-omni="galaxy-z">
+									<input type="checkbox" id="checkbox-series01z09" name="">
+									<span class="filter-sort__inp-checkbox"></span>
+								</div>
+								<label><p class="filter-sort__text">Galaxy Z</p></label>
+							</li>
+							<li title="Galaxy S">
+								<div class="filter-sort__checkbox" data-omni="galaxy-z">
+									<input type="checkbox" id="checkbox-series01z09" name="">
+									<span class="filter-sort__inp-checkbox"></span>
+								</div>
+								<label><p class="filter-sort__text">Galaxy S</p></label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/* 필터 영역 :: E */-->
+			
+		<div class="product-filter-grid__grid-wrap">
+			<!--/* Product 전체 영역 :: S */-->
+			<div class="product-grid">
+				<!--/* product card 영역 : S */-->
+				<section class="product-card-group">
+					<div class="product-card-group__list product-card-group__list--mode-list">
+						<div class="product-card type-A">
+							<div class="product-card__prd-info-flag is-empty">
+								<div class="product-card__prd-info-flag-wrap js-align-h"></div>
+							</div>
+
+							<div class="product-card__img">
+								<div class="product-card__img-view js-align-h">
+									<div class="product-card__img-view-item">
+										<a href="#">
+											<img src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--/* product card 영역 : E */-->
+
+				<!--/* Bottom Nav :: S */-->
+				<div class="grid-bottom-nav">
+					<div class="btn-view-more">
+						<a href="javascript:void(0);" class="s-btn-text s-ico-down">View more</a>
+					</div>
+				</div>
+				<!--/* Bottom Nav :: E */-->
+				<!--/* 더보기 로딩 :: S */-->
+				<div class="s-loading-wrapper" style="display:none;">
+					<div class="s-loading">
+						<span class="blind">Now Loading</span>
+					</div>
+				</div>
+				<!--/* 더보기 로딩 :: E */-->
+			</div>
+			<!--/* Product 전체 영역 :: E */-->
+		</div>
+	</div>
+
 	</div>
 	<!-- content layout -->
 
@@ -2950,18 +3141,13 @@
 </div>
 <!-- Messager Bot -->
 
-	<!-- custom js for home banner slider -->
-	<script type="text/javascript" src="js/swipper-container.js"></script>
-
 	<!-- main js for all page -->
 	<script type="text/javascript" src="js/main.js"></script>
 
-	<!-- custom js for home -->
-	<script type="text/javascript" src="js/search.js"></script>
-	<script type="text/javascript" src="js/homecarousel.js"></script>
-	<script type="text/javascript" src="js/keyfeature.js"></script>
-	<script type="text/javascript" src="js/showcase.js"></script>
-	<script type="text/javascript" src="js/teaser.js"></script>
+	<!-- custom js for shoppage -->
+	<script type="text/javascript" src="js/shoppage.js"></script>
+	<script type="text/javascript" src="js/shopfilter.js"></script>
+	
 
 </body>
 </html>
