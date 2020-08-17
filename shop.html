@@ -2801,13 +2801,20 @@
 				<!--/* Sort By 영역 : S */-->
 				
 				<div class="filter-sort__filter-select">
+					<select name="my-select" class="filter-sort__link">
+						<option value="nothing" selected>Newest</option>
+						  <option value="orange">Orange</option>
+						  <option value="yellow">Yellow</option>
+						  <option value="blue">Blue</option>
+						  <option value="green">Green</option>
+					</select>
 					<button type="button" class="filter-sort__link">sort by : <span>Newest</span><span class="filter-sort__arrow"><span class="blind">Expand</span></span></button>
 					<div class="filter-sort__sub-wrap">
 						<ul>
 							<li><button type="button" sort-id="newest" data-omni="newest"><span>Newest</span></button></li>
 							
 							<li><button type="button" sort-id="mostclicked" data-omni="mostclicked"><span>Most Clicked</span></button></li>
-							<li><button type="button" sort-id="recommended" data-omni="recommended"><span>Recommended</span></buttona></li>
+							<li><button type="button" sort-id="recommended" data-omni="recommended"><span>Recommended</span></button></li>
 							
 						</ul>
 					</div>
@@ -2829,14 +2836,14 @@
 		</div>
 	</div>
 	<!-- product-filter-grid -->
-
-	<!--/* content 영역 : S */-->
-	<div class="product-filter-grid">
+<div class="product-filter-grid">
 		
 		<!--/* 필터 영역 :: S */-->
+
 		<div class="filter-sort__list-wrap ">
 			<div class="filter-sort__list-inner">
-				<div class="filter-sort__list active">
+
+				<div class="filter-sort__list">
 					<button type="button" class="filter-sort__list-title" data-omni="Class">
 						<span class="title-text">
 							Class
@@ -2888,6 +2895,52 @@
 										<a href="#">
 											<img src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp">
 										</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="product-card__prd-info-title mobile-type">
+								<div class="product-card__prd-info-title-wrap js-align-h">
+									<a href="#">
+										<h3 class="product-card__prd-info-title-name">
+											<span>Galaxy Z Fold2</span>
+										</h3>
+									</a>
+								</div>
+							</div>
+
+							<div class="product-card__img-ctrl">
+								<div class="product-card__img-ctrl-group js-align-h">
+									<div class="product-card__img-ctrl-inner">
+										<div class="product-card__img-ctrl-wrap">
+											<ul class="product-card__img-ctrl-list s-slick">
+												<li class="product-card__img-ctrl-item">
+													<a href="#" style="background-color: #645394;"></a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="product-card__img-ctrl-inner type-text">
+										<div class="product-card__img-ctrl-wrap">
+											<ul class="product-card__img-ctrl-list s-slick">
+												<li class="product-card__img-ctrl-item">
+													<a href="#">
+														<span>‎128 GB‎</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="product-card__prd-info-title pc-type">
+										<div class="product-card__prd-info-title-wrap js-align-h">
+											<a href="#">
+												<h3 class="product-card__prd-info-title-name"><span>
+													Galaxy S20+  BTS Edition
+												</span></h3>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -3142,12 +3195,13 @@
 <!-- Messager Bot -->
 
 	<!-- main js for all page -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 	<!-- custom js for shoppage -->
 	<script type="text/javascript" src="js/shoppage.js"></script>
 	<script type="text/javascript" src="js/shopfilter.js"></script>
-	
+	<script type="text/javascript" src="js/customjsshop.js"></script>
 
 </body>
 </html>
