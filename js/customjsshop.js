@@ -1,4 +1,4 @@
-$('#yemun').toggle(function() {
+/*$('#yemun').toggle(function() {
 
   $('#yemun').text('Class (1) Collaps -');
   $('#toggle_text').slideToggle();
@@ -8,25 +8,12 @@ $('#yemun').toggle(function() {
   $('#yemun').text('Class (1) Collaps +');
   $('#toggle_text').slideToggle();
 
-});
+});*/
 
-
-/*$('#toggle_icon').toggle(function() {
-
-  $('#toggle_icon').text('-');
-  $('#toggle_text').slideToggle();
-
-}, function() {
-
-  $('#toggle_icon').text('+');
-  $('#toggle_text').slideToggle();
-
-});
-*/
-/*$('.filter-sort__filter-select').click(function() {
+$('.filter-sort__filter-select').click(function() {
     $(this).toggleClass('active');
 });
-*/
+
 
 /*function toggle_plus(id) {
     var f = document.getElementById(id);

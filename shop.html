@@ -9,9 +9,8 @@
   	  <link rel="stylesheet" type="text/css" href="css/main.css">
   	  <link rel="stylesheet" type="text/css" href="css/chatmsg.css">
 
-  	  <!-- custom css for shop page -->
+  	  <!-- shop page css -->
   	  <link rel="stylesheet" type="text/css" href="css/shoppage.css">
-  	  <link rel="stylesheet" type="text/css" href="css/shopfilter.css">
 
 </head>
 <body class="s-filter--2019">
@@ -2717,259 +2716,602 @@
 	</div>
 	<!-- header -->
 
-	<!-- content layout -->
-	<div class="cm-breadcrumb">
-	    <div class="cm-breadcrumb__inner">
-		    <ul class="cm-breadcrumb__path" vocab="http://schema.org/" typeof="BreadcrumbList">
-		        <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="/sg/"><span property="name">Home</span></a> /<meta property="position" content="1"></li>
-		        <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="/sg/mobile/"><span property="name">Mobile</span></a> /<meta property="position" content="2"></li>
-		        <li property="itemListElement" typeof="ListItem" id="pf-level3"><span property="name">Smartphones</span> /<meta property="position" content="3"></li>
-		        
-		        <li property="itemListElement" typeof="ListItem"><h1 property="name" class="pf-bc-title">All Smartphones</h1><meta property="position" content="4"></li>
-		    </ul>
-	    </div>
+<div class="gb-gnb__bar"></div>
+<div class="cm-breadcrumb">
+	<div class="cm-breadcrumb__inner">
+		<ul class="cm-breadcrumb__path">
+			<li>
+				<a href="#">Home</a>/
+			</li>
+			<li>
+				<a href="#">Mobile</a>/
+			</li>
+			<li>
+				<a href="#">Smartphone</a>/
+			</li>
+			<li>
+				<a href="#">Galaxy S</a>
+			</li>
+		</ul>
 	</div>
-	<div class="cm-page-title">
-	    <p>All Smartphones</p>
-	</div>
+</div>
 
-	<div id="content" class="st-page-pf" role="main">
-		<div class="par parsys">
-			<div class="section pr-g-flagship-header">
-		        <section class="pr-flagship-header pr-flagship-header-pf s-text-white shop-header" data-filter-id="galaxy-s" data-default-header="true">
-		            <div class="pr-flagship-header__wrap">
-		                <div class="pr-flagship-header__content-wrap">
-		                    <div class="pr-flagship-header__content-inner">
-		                        <div class="pr-flagship-header__text">
-		                            
-		                            <h2 class="pr-flagship-header__logo">Galaxy <br />
-		S20 Ultra 5G</h2>
-		                            
-		                        </div>
-		                        
-		                    </div>
-		                </div>
-		                <div class="pr-flagship-header__img">
-		                    <picture>
-		                        <source srcset="images/pf-galaxy-s20-ultra-5g-black-mo-main.webp" media="(max-width:768px)">
-		                        <img alt="" data-src-mobile="images/pf-galaxy-s20-ultra-5g-black-mo-main.webp" src="images/pf-galaxy-s20-ultra-5g-black-pc-main-1.webp" data-src-pc="images/pf-galaxy-s20-ultra-5g-black-pc-main-1.webp" class="js-img-src">
-		                    </picture>
-		                </div>
-		            </div>
-		        </section>
-			
+<!-- banner title -->
+
+<div class="pr-flagship-header shop-header">
+	<div class="pr-flagship-header__wrap">
+		<div class="pr-flagship-header__content-wrap">
+			<div class="pr-flagship-header__content-inner">
+				<h2 class="pr-flagship-header__logo">
+					Galaxy<br>
+
+					S20 Ultra 5G
+				</h2>
 			</div>
 		</div>
 
-	<!-- /* Progress Indicator */ -->
-	<div class="cm-progress-bar">
-		<div class="cm-progress-bar__loading"></div>
+		<div class="pr-flagship-header__img">
+								<div class="image">
+									<img class="image__preview responsive-img" data-desktop-src="images/pf-galaxy-s20-ultra-5g-black-pc-main-1.webp" data-mobile-src="images/All_GNB_624X624_canvas_featured.webp" alt=""/>
+									
+								</div>
+		</div>
 	</div>
-	<!-- /* //Progress Indicator */ -->
+</div>
 
-	<!-- product-filter-grid -->
-	<div class="filter-sort">
-		<div class="filter-sort__head-wrap">
-			<div class="filter-sort__head">
-			
-				<div class="filter-sort__head-title">
-					<span class="title-text">Filters</span> <span class="js-fs-item-cnt-all"></span>
+<!-- banner title -->
+
+<!-- content layout -->
+<div class="filter-sort__head-wrap">
+  <div class="filter-sort__head">
+    <div class="filter-sort__head-title">
+      <span>Filters</span>
+    </div>
+
+    <div class="filter-sort-info__results-text">
+      <p class="filter-count"></p>
+      <span class="filter-sort-info__number">8</span>
+      Result(s)
+    </div>
+
+    
+    <div class="filter-sort-applied">
+        <ul class="applied-list">
+          <div id="result"></div>
+        </ul>
+    </div>
+
+    <div class="filter-select-box">
+      <span class="filter_text_on">Sort By: </span>
+      <select name="my-select" class="js-my-select">
+        <option value="newest ">Newest</option>
+        <option value="mostclicked">Most Clicked</option>
+        <option value="recommend">Recommended</option>
+      </select>
+    </div>
+    
+  </div>
+</div>
+<!-- content product -->
+
+<div class="product-whole-area">
+  <!-- left side -->
+<div class="accordion">
+  <div class="accordion-item" id="filters">
+    <div class="accordion-item-header">
+      Class
+      <span id="selectedvalue"></span>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="filterblock">
+          <input id="check1" type="checkbox" name="phone" value="galaxyz" class="category">
+          <label for="check1">Galaxy Z</label>
+        </div>
+
+        <div class="filterblock">
+          <input id="check2" type="checkbox" name="phone" value="galaxys" class="category">
+          <label for="check2">Galaxy S</label>
+        </div>
+
+        <div class="filterblock">
+          <input id="check3" type="checkbox" name="phone" value="galaxynote" class="category">
+          <label for="check3">Galaxy Note</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Display Size
+      <span id="selectedvalue2"></span>
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <div class="filterblock">
+          <input id="check4" type="checkbox" name="display" value="size1" class="category">
+          <label for="check4">Size 1</label>
+        </div>
+
+        <div class="filterblock">
+          <input id="check5" type="checkbox" name="display" value="size2" class="category">
+          <label for="check5">Size 2</label>
+        </div>
+
+        <div class="filterblock">
+          <input id="check6" type="checkbox" name="display" value="size3" class="category">
+          <label for="check6">Size 3</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Display Technology
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        <ul style="padding-left: 1rem;">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Frameworks (CSS and JavaScript frameworks)</li>
+          <li>Responsive Design</li>
+          <li>Version Control/Git</li>
+          <li>Testing/Debugging</li>
+          <li>Browser Developer Tools</li>
+          <li>Web Performance</li>
+          <li>SEO (Search Engine Optimization)</li>
+          <!-- <li>CSS Preprocessing</li> -->
+          <li>Command Line</li>
+          <li>CMS (Content Management System)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Memory
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        HTTP, aka HyperText Transfer Protocol, is the underlying protocol used by the World Wide Web and this protocol defines how messages are formatted and transmitted, and what actions Web servers and browsers should take in response to various commands.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-item-header">
+      Camera
+    </div>
+    <div class="accordion-item-body">
+      <div class="accordion-item-body-content">
+        CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resources (e.g. images, stylesheets, scripts, fonts) on a web page to be requested from another domain outside the domain from which the resource originated.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- left side -->
+
+<!-- right side -->
+<div class="product-filter-list">
+  <div class="product-grid-list">
+    <section class="product-card-nature">
+        <div class="product-card-nature-group__list">
+          <!-- card 1 -->
+          <div class="product_item newest" data-tag="galaxyz">
+            <div class="img">
+              <img src="images/roundneck1.png" alt="Round_neck">
+              
+            </div>
+            <div class="size_color">
+                
+                 
+                <div class="color_wrap">
+                    <ul>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
+                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                    </ul>
+                </div>
+
+                <div class="storage_size">
+                  <div class="set_product_design_storage">
+                    <a href="#">
+                      <span>‎128 GB‎</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Galaxy S20+  BTS Edition</div>
+            </div>
+            <div class="price">
+                <p>$1,598.00</p>
+            </div>  
+            <div class="product-card__divider"></div>        
+            <div class="product-card-description">
+              <a href="#">
+                <ul>
+                  <li class="message-list-item">
+                    Free Samsung Wireless Charger Stand + Wireless Power Bank (total worth $216). T&Cs apply.
+                  </li>
+                  <li class="message-list-item">
+                    Pro-grade camera with 8k Video Snap, 64MP high resolution camera and 30x Space Zoom
+                  </li>
+                  <li class="message-list-item">
+                    Samsung Knox security, an intelligent battery, powerful processor, and massive storage
+                  </li>
+                </ul>
+              </a>
+            </div> 
+
+            <div class="product_card_btn">
+              <div class="product-card__cta-multi">
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+              </div>
+
+              <a href="#" class="btn-product-underline">
+                Where To Buy
+              </a>
+            </div>
+          </div>
+          <!-- card 1 -->
+
+          <!-- card 2 -->
+          <div class="product_item mostclicked" data-tag="galaxys">
+            <div class="img">
+              <img src="images/roundneck1.png" alt="Round_neck">
+              
+            </div>
+            <div class="size_color">
+                
+                 
+                <div class="color_wrap">
+                    <ul>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
+                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                    </ul>
+                </div>
+
+                <div class="storage_size">
+                  <div class="set_product_design_storage">
+                    <a href="#">
+                      <span>‎128 GB‎</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Galaxy S20+  BTS Edition</div>
+            </div>
+            <div class="price">
+                <p>$1,598.00</p>
+            </div>  
+            <div class="product-card__divider"></div>        
+            <div class="product-card-description">
+              <a href="#">
+                <ul>
+                  <li class="message-list-item">
+                    Free Samsung Wireless Charger Stand + Wireless Power Bank (total worth $216). T&Cs apply.
+                  </li>
+                  <li class="message-list-item">
+                    Pro-grade camera with 8k Video Snap, 64MP high resolution camera and 30x Space Zoom
+                  </li>
+                  <li class="message-list-item">
+                    Samsung Knox security, an intelligent battery, powerful processor, and massive storage
+                  </li>
+                </ul>
+              </a>
+            </div> 
+
+            <div class="product_card_btn">
+              <div class="product-card__cta-multi">
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+              </div>
+
+              <a href="#" class="btn-product-underline">
+                Where To Buy
+              </a>
+            </div>
+          </div>
+          <!-- card 2 -->
+
+          <!-- card 3 -->
+          <div class="product_item recommend" data-tag="galaxynote">
+            <div class="img">
+              <img src="images/roundneck1.png" alt="Round_neck">
+              
+            </div>
+            <div class="size_color">
+                
+                 
+                <div class="color_wrap">
+                    <ul>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
+                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                    </ul>
+                </div>
+
+                <div class="storage_size">
+                  <div class="set_product_design_storage">
+                    <a href="#">
+                      <span>‎128 GB‎</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Galaxy S20+  BTS Edition</div>
+            </div>
+            <div class="price">
+                <p>$1,598.00</p>
+            </div>  
+            <div class="product-card__divider"></div>        
+            <div class="product-card-description">
+              <a href="#">
+                <ul>
+                  <li class="message-list-item">
+                    Free Samsung Wireless Charger Stand + Wireless Power Bank (total worth $216). T&Cs apply.
+                  </li>
+                  <li class="message-list-item">
+                    Pro-grade camera with 8k Video Snap, 64MP high resolution camera and 30x Space Zoom
+                  </li>
+                  <li class="message-list-item">
+                    Samsung Knox security, an intelligent battery, powerful processor, and massive storage
+                  </li>
+                </ul>
+              </a>
+            </div> 
+
+            <div class="product_card_btn">
+              <div class="product-card__cta-multi">
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+              </div>
+
+              <a href="#" class="btn-product-underline">
+                Where To Buy
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+
+          <!-- card 4 -->
+          <div class="product_item newest" data-tag="galaxyz">
+            <div class="img">
+              <img src="images/roundneck1.png" alt="Round_neck">
+              
+            </div>
+            <div class="size_color">
+                
+                 
+                <div class="color_wrap">
+                    <ul>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
+                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                    </ul>
+                </div>
+
+                <div class="storage_size">
+                  <div class="set_product_design_storage">
+                    <a href="#">
+                      <span>‎128 GB‎</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Galaxy S20+  BTS Edition</div>
+            </div>
+            <div class="price">
+                <p>$1,598.00</p>
+            </div>  
+            <div class="product-card__divider"></div>        
+            <div class="product-card-description">
+              <a href="#">
+                <ul>
+                  <li class="message-list-item">
+                    Free Samsung Wireless Charger Stand + Wireless Power Bank (total worth $216). T&Cs apply.
+                  </li>
+                  <li class="message-list-item">
+                    Pro-grade camera with 8k Video Snap, 64MP high resolution camera and 30x Space Zoom
+                  </li>
+                  <li class="message-list-item">
+                    Samsung Knox security, an intelligent battery, powerful processor, and massive storage
+                  </li>
+                </ul>
+              </a>
+            </div> 
+
+            <div class="product_card_btn">
+              <div class="product-card__cta-multi">
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+              </div>
+
+              <a href="#" class="btn-product-underline">
+                Where To Buy
+              </a>
+            </div>
+          </div>
+          <!-- card 4 -->
+
+          <!-- card 5 -->
+          <div class="product_item mostclicked" data-tag="galaxys">
+            <div class="img">
+              <img src="images/roundneck1.png" alt="Round_neck">
+              
+            </div>
+            <div class="size_color">
+                
+                 
+                <div class="color_wrap">
+                    <ul>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
+                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                    </ul>
+                </div>
+
+                <div class="storage_size">
+                  <div class="set_product_design_storage">
+                    <a href="#">
+                      <span>‎128 GB‎</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Galaxy S20+  BTS Edition</div>
+            </div>
+            <div class="price">
+                <p>$1,598.00</p>
+            </div>  
+            <div class="product-card__divider"></div>        
+            <div class="product-card-description">
+              <a href="#">
+                <ul>
+                  <li class="message-list-item">
+                    Free Samsung Wireless Charger Stand + Wireless Power Bank (total worth $216). T&Cs apply.
+                  </li>
+                  <li class="message-list-item">
+                    Pro-grade camera with 8k Video Snap, 64MP high resolution camera and 30x Space Zoom
+                  </li>
+                  <li class="message-list-item">
+                    Samsung Knox security, an intelligent battery, powerful processor, and massive storage
+                  </li>
+                </ul>
+              </a>
+            </div> 
+
+            <div class="product_card_btn">
+              <div class="product-card__cta-multi">
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+              </div>
+
+              <a href="#" class="btn-product-underline">
+                Where To Buy
+              </a>
+            </div>
+          </div>
+          <!-- card 5 -->
+
+          <!-- card 6 -->
+          <div class="product_item mostclicked" data-tag="galaxynote">
+            <div class="img">
+              <img src="images/roundneck1.png" alt="Round_neck">
+              
+            </div>
+            <div class="size_color">
+                
+                 
+                <div class="color_wrap">
+                    <ul>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
+                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                    </ul>
+                </div>
+
+                <div class="storage_size">
+                  <div class="set_product_design_storage">
+                    <a href="#">
+                      <span>‎128 GB‎</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="title">Galaxy S20+  BTS Edition</div>
+            </div>
+            <div class="price">
+                <p>$1,598.00</p>
+            </div>  
+            <div class="product-card__divider"></div>        
+            <div class="product-card-description">
+              <a href="#">
+                <ul>
+                  <li class="message-list-item">
+                    Free Samsung Wireless Charger Stand + Wireless Power Bank (total worth $216). T&Cs apply.
+                  </li>
+                  <li class="message-list-item">
+                    Pro-grade camera with 8k Video Snap, 64MP high resolution camera and 30x Space Zoom
+                  </li>
+                  <li class="message-list-item">
+                    Samsung Knox security, an intelligent battery, powerful processor, and massive storage
+                  </li>
+                </ul>
+              </a>
+            </div> 
+
+            <div class="product_card_btn">
+              <div class="product-card__cta-multi">
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+                <a href="#" class="product_btn_one">
+                  <span>Learn More</span>
+                </a>
+              </div>
+
+              <a href="#" class="btn-product-underline">
+                Where To Buy
+              </a>
+            </div>
+          </div>
+          <!-- card 6 -->
+        </div>
+    </section>
+  </div>
+</div>
+<!-- right side -->
+
+</div>
+<!-- content product -->
+
+<!-- shop page footer -->
+
+	<div class="pr-g-product-disclaimer">
+		<div class="pr-g-product-disclaimer__inner">
+			<div class="pr-g-product-disclaimer__inner-wrap pr-g-product-disclaimer__inner-wrap__col1">
+				<div class="pr-g-product-disclaimer__column">
+					<p>
+						* Key feature may different from Key Spec.
+						<br>
+
+* Battery : Actual battery life varies by network environment, features and apps used, frequency of calls and messages, number of times charged, and many other factors.
+<br>
+
+* User Available Memory : User memory is less than the total memory due to storage of the operating system and software used to operate the device features. Actual user memory will vary depending on the operator and may change after software upgrades are performed.
+<br>
+
+* Network : The bandwidths supported by the device may vary depending on the region or service provider.
+<br>
+
+* Galaxy Note20 Ultra 5G is 5G-capable and can be used to access 5G network in Singapore after local 5G network are launched.  SIM card upgrade and/or software update may be required. Data subscription fees apply. Images are simulated for illustration purposes.
+<br>
+
+* Image at the top of page of Galaxy Z Fold2 unfolded and seen from the front with the butterfly graphic wallpaper onscreen simulated for illustration purposes.
+<br>
+					</p>
 				</div>
-				
-				<button type="button" class="filter-sort__close-button">
-					<span class="blind">Close</span>
-				</button>
-				
-				<!--/* 검색결과 문구 : S */-->
-				<div class="filter-sort-info__results-text"></div>
-				<!--/* 검색결과 문구 : E */-->
-				
-				<div class="filter-sort__reset-button">
-					<button type="button" class="s-btn-text-underline">Reset Filters</button>
-				</div>
-				
-				<div class="filter-sort__xscroll-wrap">
-					
-					<!--/* 선택 된 필터 노출 영역 : S */-->
-					<div class="filter-sort-applied">
-						<p class="filter-sort-applied__title blind">Applied Filters</p>
-						<ul class="applied-list"></ul>
-					</div>
-					<!--/* 선택 된 필터 노출 영역 : E */-->
-				</div>
-				
-				<!--/* Sort By 영역 : S */-->
-				
-				<div class="filter-sort__filter-select">
-					<select name="my-select" class="filter-sort__link">
-						<option value="nothing" selected>Newest</option>
-						  <option value="orange">Orange</option>
-						  <option value="yellow">Yellow</option>
-						  <option value="blue">Blue</option>
-						  <option value="green">Green</option>
-					</select>
-					<button type="button" class="filter-sort__link">sort by : <span>Newest</span><span class="filter-sort__arrow"><span class="blind">Expand</span></span></button>
-					<div class="filter-sort__sub-wrap">
-						<ul>
-							<li><button type="button" sort-id="newest" data-omni="newest"><span>Newest</span></button></li>
-							
-							<li><button type="button" sort-id="mostclicked" data-omni="mostclicked"><span>Most Clicked</span></button></li>
-							<li><button type="button" sort-id="recommended" data-omni="recommended"><span>Recommended</span></button></li>
-							
-						</ul>
-					</div>
-				</div>
-	
-				<div class="filter-sort__filter-select-mo">
-					<span class="filter-sort__filter-select-text">sort by<span>Newest</span></span>
-					<select>
-						<option sort-id="newest" value="newest" selected="selected">Newest</option>
-						
-						<option sort-id="mostclicked" value="mostclicked">Most Clicked</option>
-						<option sort-id="recommended" value="recommended">Recommended</option>
-						
-					</select>
-				</div>
-				
-				<!--/* Sort By 영역 : E */-->				
 			</div>
 		</div>
 	</div>
-	<!-- product-filter-grid -->
-<div class="product-filter-grid">
-		
-		<!--/* 필터 영역 :: S */-->
 
-		<div class="filter-sort__list-wrap ">
-			<div class="filter-sort__list-inner">
-
-				<div class="filter-sort__list">
-					<button type="button" class="filter-sort__list-title" data-omni="Class">
-						<span class="title-text">
-							Class
-							<span class="js-fs-item-cnt">
-								‎(1)‎
-							</span>
-						</span>
-						<span class="filter-sort__symbol">
-							<span class="blind">Collaps</span>
-						</span>
-					</button>
-					<div class="filter-sort__item">
-						<ul>
-							<li title="Galaxy Z">
-								<div class="filter-sort__checkbox" data-omni="galaxy-z">
-									<input type="checkbox" id="checkbox-series01z09" name="">
-									<span class="filter-sort__inp-checkbox"></span>
-								</div>
-								<label><p class="filter-sort__text">Galaxy Z</p></label>
-							</li>
-							<li title="Galaxy S">
-								<div class="filter-sort__checkbox" data-omni="galaxy-z">
-									<input type="checkbox" id="checkbox-series01z09" name="">
-									<span class="filter-sort__inp-checkbox"></span>
-								</div>
-								<label><p class="filter-sort__text">Galaxy S</p></label>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--/* 필터 영역 :: E */-->
-			
-		<div class="product-filter-grid__grid-wrap">
-			<!--/* Product 전체 영역 :: S */-->
-			<div class="product-grid">
-				<!--/* product card 영역 : S */-->
-				<section class="product-card-group">
-					<div class="product-card-group__list product-card-group__list--mode-list">
-						<div class="product-card type-A">
-							<div class="product-card__prd-info-flag is-empty">
-								<div class="product-card__prd-info-flag-wrap js-align-h"></div>
-							</div>
-
-							<div class="product-card__img">
-								<div class="product-card__img-view js-align-h">
-									<div class="product-card__img-view-item">
-										<a href="#">
-											<img src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp">
-										</a>
-									</div>
-								</div>
-							</div>
-
-							<div class="product-card__prd-info-title mobile-type">
-								<div class="product-card__prd-info-title-wrap js-align-h">
-									<a href="#">
-										<h3 class="product-card__prd-info-title-name">
-											<span>Galaxy Z Fold2</span>
-										</h3>
-									</a>
-								</div>
-							</div>
-
-							<div class="product-card__img-ctrl">
-								<div class="product-card__img-ctrl-group js-align-h">
-									<div class="product-card__img-ctrl-inner">
-										<div class="product-card__img-ctrl-wrap">
-											<ul class="product-card__img-ctrl-list s-slick">
-												<li class="product-card__img-ctrl-item">
-													<a href="#" style="background-color: #645394;"></a>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="product-card__img-ctrl-inner type-text">
-										<div class="product-card__img-ctrl-wrap">
-											<ul class="product-card__img-ctrl-list s-slick">
-												<li class="product-card__img-ctrl-item">
-													<a href="#">
-														<span>‎128 GB‎</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-
-									<div class="product-card__prd-info-title pc-type">
-										<div class="product-card__prd-info-title-wrap js-align-h">
-											<a href="#">
-												<h3 class="product-card__prd-info-title-name"><span>
-													Galaxy S20+  BTS Edition
-												</span></h3>
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!--/* product card 영역 : E */-->
-
-				<!--/* Bottom Nav :: S */-->
-				<div class="grid-bottom-nav">
-					<div class="btn-view-more">
-						<a href="javascript:void(0);" class="s-btn-text s-ico-down">View more</a>
-					</div>
-				</div>
-				<!--/* Bottom Nav :: E */-->
-				<!--/* 더보기 로딩 :: S */-->
-				<div class="s-loading-wrapper" style="display:none;">
-					<div class="s-loading">
-						<span class="blind">Now Loading</span>
-					</div>
-				</div>
-				<!--/* 더보기 로딩 :: E */-->
-			</div>
-			<!--/* Product 전체 영역 :: E */-->
-		</div>
-	</div>
-
-	</div>
-	<!-- content layout -->
+<!-- shop page footer -->
 
 <!-- Footer -->
 <footer class="footer">
@@ -3194,14 +3536,14 @@
 </div>
 <!-- Messager Bot -->
 
-	<!-- main js for all page -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
-	<!-- custom js for shoppage -->
-	<script type="text/javascript" src="js/shoppage.js"></script>
-	<script type="text/javascript" src="js/shopfilter.js"></script>
-	<script type="text/javascript" src="js/customjsshop.js"></script>
-
+	<!-- shop page js -->
+<script  src="js/shopage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/productcolorchange.js"></script>
+<script src="js/multicheckboxjquery.js"></script>
+<script src="js/selectbox.js"></script>
+<script src="js/displaycheckedbox.js"></script>
 </body>
 </html>
