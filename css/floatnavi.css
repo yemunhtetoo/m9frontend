@@ -3,7 +3,7 @@
 .floating-navigation:after{content:'';display:block;height:86px}
 .floating-navigation__wrap{position:absolute;left:0;right:0;width:100%;height:86px;margin:0 auto;z-index:1999}
 .floating-navigation__wrap:after{content:'';display:block;position:absolute;bottom:0;left:0;right:0;margin:0 auto;height:36px;opacity:.3}
-[class*='--fixed'] .floating-navigation__wrap{position:fixed;top:0;left:0;right:0}
+[class*='--fixed'] .floating-navigation__wrap{position:fixed;top:30px;left:0;right:0}
 .floating-navigation__inner{position:relative;margin:0 auto;max-width:1440px;height:100%}
 .floating-navigation__menu{position:absolute;left:auto;right:auto;bottom:0;width:100%;height:35px;text-align:left;white-space:nowrap;overflow:hidden;z-index:2}
 .floating-navigation__menu-bar{position:absolute;left:20px;right:auto;top:32px;height:3px;background:#0073c3;z-index:1;-webkit-transition:width 2s,left 1s;transition:width 2s,left 1s;-webkit-transform:translateZ(0);transform:translateZ(0)}
@@ -206,4 +206,10 @@ html[lang^="th"] .floating-navigation__button{font-size:18.9px}
 html[lang^="th"] .floating-navigation .floating-navigation__headline-text{font-family:'Kittithada','SamsungOne',arial,sans-serif}
 @media only screen and (max-width:767px){html[lang^="th"] .floating-navigation__headline-text{font-size:21.6px}
 html[lang^="th"] .floating-navigation__button{font-size:18.9px}
+}
+
+@media (max-width: 1024px) {
+	[class*='--fixed'] .floating-navigation__wrap{
+		top: auto;
+	}
 }

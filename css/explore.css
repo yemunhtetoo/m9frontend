@@ -24,6 +24,12 @@
 	margin:0 auto
 	}
 
+@media only screen and (max-width: 767px) {
+[data-font-size-mo='70'] {
+	font-size: 8.88888889vw;
+}
+}
+
 .ex-article-hero__eyebrow{
 	letter-spacing:2.4px;
 	font-size:14px;

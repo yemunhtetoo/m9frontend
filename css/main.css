@@ -84,9 +84,11 @@ em,address{
 	transition:opacity .6s cubic-bezier(0.4,0,0.2,1)
 }
 .gnb__nav{
-	position:relative;
+	position:fixed;
 	background:#fff;
-	z-index:2000
+	z-index:2000;
+	width: 100%;
+	top: 0;
 }
 .gnb__bar{
 	max-width:1440px;
@@ -562,9 +564,9 @@ em,address{
 	position:relative;
 }
 
-/* .hide_mgnsec {
-	margin-right: 0!important;
-}*/
+#content {
+	margin-top: 100px;
+}
 
 .gnb__utility .gnb__cart-in-number{
 	position:absolute;
@@ -4124,4 +4126,13 @@ html[lang^="th"] .indicator__label{
 	right:0
 }
 
+}
+
+@media (max-width: 1024px) {
+	#content {
+		margin-top: 55px;
+	}
+	.gnb__logo:after {
+		height: 60px;
+	}
 }

@@ -1,10 +1,4 @@
-/*
- samsung.com - hub - Slide Show Container
- src : /samsung/components/hub/hu-g-slide-show-container/clientlibs/devjs/hu-g-slide-show-container.js
 
- @version 1.0.0
- @since 2019.12.26
-*/
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.arrayIteratorImpl=function(f){var a=0;return function(){return a<f.length?{done:!1,value:f[a++]}:{done:!0}}};$jscomp.arrayIterator=function(f){return{next:$jscomp.arrayIteratorImpl(f)}};$jscomp.makeIterator=function(f){var a="undefined"!=typeof Symbol&&Symbol.iterator&&f[Symbol.iterator];return a?a.call(f):$jscomp.arrayIterator(f)};$jscomp.arrayFromIterator=function(f){for(var a,k=[];!(a=f.next()).done;)k.push(a.value);return k};
 $jscomp.arrayFromIterable=function(f){return f instanceof Array?f:$jscomp.arrayFromIterator($jscomp.makeIterator(f))};
 (function(f,a){window.sg=window.sg||{};window.sg.common=window.sg.common||{};window.sg.components=window.sg.components||{};var k=window.sg.common.constants.BREAKPOINTS,c=window.sg.common.utils,q=window.sg.common.exploreUtils,m=window.sg.common.$q,p=window.sg.components;p.slideShowContainer=function(){var m={htmlVideoOpen:"video-layer-open",wrap:".ex-slide-show-container",objectFit:{target:".js-object-fit",ended:"objectfit-initialized"},slideCount:{pcTotal:".ex-items-slide-card__paging-pc-total",pc:".ex-items-slide-card__paging-pc-num",
