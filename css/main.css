@@ -108,15 +108,15 @@ em,address{
 .gnb__logo{
 	float:left;
 	position:relative;
-	margin-top:24px
+	margin-top:5px
 }
 .gnb__logo:after{
 	content:'';
 	display:block;
-	width:120px;
-	height:32px;
-	background:url(../images/alpha.png) no-repeat 50% 50%;
-	background-size:104px 16px
+	width:100px;
+	height:70px;
+	background:url(../images/alphareal.png) no-repeat 100% 50%;
+	background-size:100%;
 }
 .gnb__mobile-menu,.gnb__depth-title,.gnb__menu-close{
 	display:none;
@@ -560,8 +560,12 @@ em,address{
 }
 .gnb__utility .gnb__language{
 	position:relative;
-	margin-right: 20px
 }
+
+/* .hide_mgnsec {
+	margin-right: 0!important;
+}*/
+
 .gnb__utility .gnb__cart-in-number{
 	position:absolute;
 	top:-3px;
@@ -3447,7 +3451,7 @@ html[lang^="th"] .indicator__label{
 	padding:8px 16px
 }
 .gnb__logo{
-	margin-top:4px
+	margin-top:-10px
 }
 .gnb__main{
 	margin-left:0
