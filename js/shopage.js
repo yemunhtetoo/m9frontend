@@ -19,5 +19,4 @@ accordionItemHeaders.forEach(accordionItemHeader => {
       accordionItemBody.style.maxHeight = 0;
     }
     
-  });
 });
