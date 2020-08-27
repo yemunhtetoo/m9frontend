@@ -388,3 +388,10 @@ ul, ol {
 	}
 
 }
+
+@media (max-width: 600px) {
+	.store-locator .store-container {
+		top: 13%;
+		width: 265px;
+	}
+}

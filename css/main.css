@@ -4007,6 +4007,7 @@ html[lang^="th"] .indicator__label{
 	vertical-align:middle
 }
 .open .gnb__utility-menu{
+	display: block!important;
 	visibility:visible;
 	opacity:1;
 	-webkit-transition:opacity .5s cubic-bezier(0.2,0.6,0.4,1) .2s;
