@@ -655,6 +655,13 @@ content:'';display:block;position:absolute;left:0;right:0;bottom:1px;height:1px;
   min-height: 300px;
 }
 }
+
+.product_card_btn .btn-product-underline {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
 @media(max-width:767px) {
   html {
     font-size: 14px;
