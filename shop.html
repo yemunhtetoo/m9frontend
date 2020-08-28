@@ -11,6 +11,7 @@
 
   	  <!-- shop page css -->
   	  <link rel="stylesheet" type="text/css" href="css/shoppage.css">
+  	  <link rel="stylesheet" type="text/css" href="css/nice-select.css">
 
 </head>
 <body class="s-filter--2019">
@@ -2782,7 +2783,7 @@
         </ul>
     </div>
 
-    <div class="filter-select-box">
+    <div class="filter-select-box-meta">
       <span class="filter_text_on">Sort By: </span>
       <select name="my-select" class="js-my-select">
         <option value="newest ">Newest</option>
@@ -2790,6 +2791,35 @@
         <option value="recommend">Recommended</option>
       </select>
     </div>
+
+<!--     <div class="filter-select-box-meta">
+	  <div class="select-box__current" tabindex="1">
+	    <div class="select-box__value">
+	      <input class="select-box__input" type="radio" id="0" value="newest" name="Ben" checked="checked"/>
+	      <p class="select-box__input-text">Newest</p>
+	    </div>
+	    <div class="select-box__value">
+	      <input class="select-box__input" type="radio" id="1" value="mostclicked" name="Ben" checked="checked"/>
+	      <p class="select-box__input-text">Most Clicked</p>
+	    </div>
+	    <div class="select-box__value">
+	      <input class="select-box__input" type="radio" id="2" value="recommend" name="Ben" checked="checked"/>
+	      <p class="select-box__input-text">Recommended</p>
+	    </div>
+		<img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+	  </div>
+	  <ul class="select-box__list">
+	    <li>
+	      <label class="select-box__option" for="0" aria-hidden="aria-hidden">Newest</label>
+	    </li>
+	    <li>
+	      <label class="select-box__option" for="1" aria-hidden="aria-hidden">Most Clicked</label>
+	    </li>
+	    <li>
+	      <label class="select-box__option" for="2" aria-hidden="aria-hidden">Recommended</label>
+	    </li>
+	  </ul>
+    </div> -->
     
   </div>
 </div>
@@ -3546,5 +3576,11 @@
 <script src="js/multicheckboxjquery.js"></script>
 <script src="js/selectbox.js"></script>
 <script src="js/displaycheckedbox.js"></script>
+<script type="text/javascript" src="js/jquery.nice-select.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+  $('select').niceSelect();
+});
+</script>
 </body>
 </html>

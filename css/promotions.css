@@ -2,6 +2,10 @@ body {
 	overflow-x: hidden;
 }
 
+.slick-dotted.slick-slider {
+  margin-top: 50px;
+}
+
 a {
 	text-decoration: none!important;
 }
@@ -317,14 +321,18 @@ a {
   height: 100%;
   margin-bottom: 10px;
 }
+
+
 .filter_text_on {
 	color: #000;
 	text-transform: uppercase;
 	font-weight: bold;
+  float: right;
+  position: relative;
+  top: 5px;
 }
 .filter-select-box .js-my-select {
   background-color: #eee;
-  border: none;
   cursor: pointer;
   font-size: 16px;
   font-weight: normal;
@@ -332,6 +340,11 @@ a {
   position: relative;
   top: -3px;
   font-weight: bold;
+}
+
+.nice-select:after {
+  width: 10px!important;
+  height: 10px!important;
 }
 
 .slider span.set_title a {
@@ -364,4 +377,20 @@ a {
 
 .slick-next {
 	display: none!important;
+}
+
+@media (max-width: 600px) {
+  .filter_text_on {
+    top: 0;
+  }
+  .filter-select-box .js-my-select {
+    top: 0;
+  }
+  .filter-select-box .js-my-select {
+    float: left;
+    text-align: left;
+  }
+  .filter_text_on {
+    display: none;
+  }
 }

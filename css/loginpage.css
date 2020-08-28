@@ -15,10 +15,9 @@
 .one-header .header-title { padding:20px 24px 8px 24px; font-size: 18px; font-weight: 500; }
 .one-header, .one-footer { flex: none; }
 .one-main { 
-	/* flex:1 0 auto;  */
-	flex-grow:1;  /* 컨텐츠 내용에 상관 없이 꽉 채우기 1, 안채우고 컨텐츠 내용대로 0 */
-	flex-shrink:0; /* 컨텐츠 내용에 딱 맞게 박스 채우기, 밖으로 터져나가기 0 */
-	flex-basis:auto; /* 컨텐츠 아이템의 길이 지정 */
+	flex-grow:1;  
+	flex-shrink:0; 
+	flex-basis:auto; 
 	width: 100%;
 	min-width: 220px;
 }

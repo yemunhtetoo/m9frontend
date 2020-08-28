@@ -16,6 +16,7 @@
   	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
   	  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   	  <link rel="stylesheet" type="text/css" href="css/promotions.css">
+  	  <link rel="stylesheet" type="text/css" href="css/nice-select.css">
 </head>
 <body>
 	<div class="gnb js-mobile-open">
@@ -2720,7 +2721,7 @@
 	</div>
 	<!-- header -->
 
-<div id="content" role="main">
+<div id="content" class="buth" role="main">
 
 		<div class="title_promo">Shop offers by category:</div>
 
@@ -2789,15 +2790,21 @@
 	<div class="set_bg_color_for_promo">
 		<div class="container">
 			<div class="row pt-5">
-				<div class="col-md-12">
+				<div class="col-md-8"></div>
+				<div class="col-md-2">
+					<span class="filter_text_on">Sort By: </span>
+				</div>
+				<div class="col-md-2">
 					<div class="filter-select-box">
-				      <span class="filter_text_on">Sort By: </span>
+				      
 				      <select name="my-select" class="js-my-select">
 				        <option value="newest">Newest</option>
 				        <option value="mostclicked">Most Clicked</option>
 				        <option value="recommend">Recommended</option>
 				      </select>
 				    </div>
+
+
 				</div>
 			</div> 
 
@@ -3314,5 +3321,11 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 	<script type="text/javascript" src="js/promotionsjs.js"></script>
+	<script type="text/javascript" src="js/jquery.nice-select.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+  $('select').niceSelect();
+});
+</script>
 </body>
 </html>
