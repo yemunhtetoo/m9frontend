@@ -12,6 +12,8 @@
 	box-sizing: border-box;
 }
 
+.gb-gnb__bar{position:relative;background-color:#fff;border-bottom:1px solid #dadada}
+
 .cm-breadcrumb__path{max-width:70%;padding:0 25px 0;padding-left:0;-webkit-box-sizing:border-box;box-sizing:border-box;text-transform:capitalize;font-size:0;white-space:nowrap;text-align:left}
 
 ul, ol { list-style: none; }
