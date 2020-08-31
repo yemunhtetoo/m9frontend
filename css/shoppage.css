@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 * {
   margin: 0;
   padding: 0;
@@ -736,4 +734,11 @@ content:'';display:block;position:absolute;left:0;right:0;bottom:1px;height:1px;
   padding: 10px 20px;
   margin-right: 10px;
 }
+}
+
+@media (max-width: 600px) {
+  .filter-sort-info__results-text:before {
+    display: none;
+}
+
 }
