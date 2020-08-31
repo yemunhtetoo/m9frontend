@@ -14,7 +14,6 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
   background-color: #fff;
   color: #fff;
 }
@@ -741,4 +740,17 @@ content:'';display:block;position:absolute;left:0;right:0;bottom:1px;height:1px;
     display: none;
 }
 
+}
+
+@media (max-width: 1024px) and (min-width: 768px) { 
+
+.accordion {
+  width: 30%;
+}
+.product-filter-list {
+  width: 70%;
+}
+.product_item {
+  width: 48%;
+}
 }

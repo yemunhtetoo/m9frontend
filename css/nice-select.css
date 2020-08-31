@@ -136,3 +136,12 @@
 
 .no-csspointerevents .nice-select.open .list {
   display: block; }
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .nice-select {
+    float: left;
+  }
+  .filter_text_on {
+    display: none;
+  }
+}
