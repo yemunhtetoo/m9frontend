@@ -41,7 +41,7 @@
 
 .step-title.active h2 { margin-bottom: 24px; }
 
-.step-title h2{display:inline-block;font-size:20px;line-height:40px;font-family:SamsungOne600,'Open Sans',Helvetica,Arial,sans-serif;padding:0}
+.step-title h2{display:inline-block;font-size:20px;line-height:40px;padding:0}
 
 .checkout-page-container.ng-checkout.checkout-wrapper .checkout-content.checkout-left-content .step-body .checkout-form-group { margin-bottom: 8px; }
 

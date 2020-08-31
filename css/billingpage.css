@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@font-face {
+	font-family: SamsungSans;
+	src: url(SamsungSans-Regular.ttf);
+}
 
 * {
 	margin: 0;
 	padding: 0;
-	  font-family: 'Montserrat', sans-serif;
-
+	font-family: SamsungSans;
 }
 
 a {

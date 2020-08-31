@@ -36,7 +36,6 @@
 .teaser-list__desktop-title{
 	display:block;
 	line-height:1.2;
-	font-family:'SamsungSharpSans',arial,sans-serif;
 	word-wrap:break-word;
 	overflow:hidden;
 	font-weight:bold
@@ -221,7 +220,6 @@
 	top:16px;
 	font-size:14px;
 	line-height:21px;
-	font-family:'SamsungOne',arial,sans-serif;
 	font-weight:700;
 	left:0
 }
@@ -229,7 +227,6 @@
 	font-size:16px;
 	line-height:22px;
 	font-weight:bold;
-	font-family:'SamsungSharpSans',arial,sans-serif;
 	word-wrap:break-word
 }
 .teaser-list__list-item-button{

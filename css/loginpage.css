@@ -1,4 +1,13 @@
-* {margin:0; padding:0; font-family:inherit; font-size:inherit; line-height:inherit; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; word-wrap: break-word; word-break:break-word; }
+@font-face {
+	font-family: SamsungSans;
+	src: url(SamsungSans-Regular.ttf);
+}
+
+* {
+	font-family: SamsungSans;
+}
+
+* {margin:0; padding:0; font-size:inherit; line-height:inherit; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; word-wrap: break-word; word-break:break-word; }
 
 .one-header, .one-footer {
 	flex: none;
@@ -7,6 +16,8 @@
 .one-main .main-inner .container.loginForm .regist h1 {
 	color: #000;
 }
+
+
 .one-checkBox label {width: 100%;}
 .one-header { min-height: 56px; }
 .one-header .header-inner { max-width:1164px; margin: 0 auto; box-sizing: border-box; }
@@ -215,4 +226,10 @@ ul, li, ol { list-style: none; }
 	.one-btn-container.wise { padding: 0; }
 	.one-btn-container.wise .one-button {min-width:236px; margin-left: 12px; margin-right: 12px;}
 	.under-content .one-btn-container { margin-top: 50px; }
+}
+
+@media (max-width: 600px) {
+	.one-header .logo img {
+		height: 100px;
+	}
 }

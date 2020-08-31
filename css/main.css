@@ -1,3 +1,11 @@
+@font-face {
+	font-family: SamsungSans;
+	src: url(SamsungSans-Regular.ttf);
+}
+
+* {
+	font-family: SamsungSans;
+}
 button{
 	border:0;
 	margin:0;
@@ -794,7 +802,6 @@ em,address{
 	transition-duration:.2s;
 	-webkit-transition-timing-function:cubic-bezier(0.33,0,0.3,1);
 	transition-timing-function:cubic-bezier(0.33,0,0.3,1);
-	font-family:'SamsungOne',arial,sans-serif;
 	font-size:14px;
 	font-weight:bold;
 	line-height:19px;
@@ -836,7 +843,6 @@ table caption,legend,.hidden,.blind{
 	box-sizing:border-box
 }
 .gnb-search__contents .text-title{
-	font-family:'SamsungSharpSans',arial,sans-serif;
 	text-align:center;
 	line-height:1.32;
 	color:#fff
@@ -861,14 +867,12 @@ table caption,legend,.hidden,.blind{
 	box-sizing:border-box;
 	padding:0;
 	font-weight:bold;
-	font-family:'SamsungSharpSans',arial,sans-serif
 }
 .gnb-search__input::-ms-clear{
 	display:none
 }
 .gnb-search__placeholder{
 	position:absolute;
-	font-family:'SamsungSharpSans',arial,sans-serif;
 	font-weight:bold;
 	color:#919191;
 	top:50%;
@@ -1459,7 +1463,6 @@ table caption,legend,.hidden,.blind{
 	-webkit-transform:translateY(-50%);
 	transform:translateY(-50%);
 	position:relative;
-	font-family:'SamsungOne',arial,sans-serif;
 	font-size:18px;
 	font-weight:bold;
 	color:#000;
@@ -1557,7 +1560,6 @@ table caption,legend,.hidden,.blind{
 	position:relative;
 	width:1392px;
 	margin:0 auto;
-	font-family:'SamsungSharpSans',arial,sans-serif;
 	font-weight:bold;
 	font-size:38px;
 	display:-webkit-box;
