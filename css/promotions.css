@@ -2,6 +2,21 @@ body {
 	overflow-x: hidden;
 }
 
+.fa
+{
+  font-size:30px !important;
+  cursor:pointer;
+}
+.checked
+{
+  content: '\f004';
+  color:red;
+}
+.unchecked
+{
+  color:black;
+}
+
 .slick-dotted.slick-slider {
   margin-top: 50px;
 }
