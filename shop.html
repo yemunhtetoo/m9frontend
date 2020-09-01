@@ -12,6 +12,8 @@
   	  <!-- shop page css -->
   	  <link rel="stylesheet" type="text/css" href="css/shoppage.css">
   	  <link rel="stylesheet" type="text/css" href="css/nice-select.css">
+  	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  	  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
 
 </head>
 <body class="s-filter--2019">
@@ -2929,7 +2931,7 @@
           <!-- card 1 -->
           <div class="product_item newest" data-tag="galaxyz">
             <div class="img">
-              <img src="images/roundneck1.png" alt="Round_neck">
+              <img src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp" alt="Round_neck">
               
             </div>
             <div class="size_color">
@@ -2937,24 +2939,69 @@
                  
                 <div class="color_wrap">
                     <ul>
-                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp"></li>
-                        <li class="active" data-color="#532e35" data-src="images/roundneck1.png"></li>
-                        <li data-color="#7f8cab" data-src="images/roundneck3.png"></li>
+                        <li data-color="#cab7a2" data-src="images/sg-galaxy-s20-plus-g985fzpdxsp-sm-g985fzpdxsp-frontbpurple-thumb-261836649.webp" class="active buttonselection" data-filter="galaxys20"></li>
+                        <li data-color="#532e35" data-src="images/roundneck1.png" class="buttonselection" data-filter="galaxys20plus"></li>
+                        <li data-color="#7f8cab" data-src="images/roundneck3.png" class="buttonselection" data-filter="galaxys20ultra"></li>
                     </ul>
                 </div>
 
                 <div class="storage_size">
-                  <div class="set_product_design_storage">
-                    <a href="#">
-                      <span>‎128 GB‎</span>
-                    </a>
-                  </div>
+                	<div class="slider">
+                		<div class="set_product_design_storage">
+                            <span class="buttonselection" data-filter="galaxys20">‎128 GB‎</span>
+                        </div>
+
+                        <div class="set_product_design_storage">
+                            <span class="buttonselection" data-filter="galaxys20plusram1">‎256 GB</span>
+                        </div>
+
+                        <div class="set_product_design_storage">
+                            <span class="buttonselection" data-filter="galaxys20plusram2">‎512 GB</span>
+                        </div>
+
+                        <div class="set_product_design_storage">
+                            <span class="buttonselection" data-filter="galaxys20plusram3">1024 GB</span>
+                        </div>
+
+                	</div>
+                  
                 </div>
                 <div class="title">Galaxy S20+  BTS Edition</div>
             </div>
-            <div class="price">
-                <p>$1,598.00</p>
-            </div>  
+
+            <div class="pricesection">
+	            <div class="box filter galaxys20 titlesection">
+	            <div class="price">
+	                <p>Ks: 1,900,000</p>
+	            </div>  
+	            </div>
+
+	            <div class="box filter galaxys20plus titlesection">
+	            <div class="price">
+	                <p>Ks: 1,910,000</p>
+	            </div>  
+	            </div>
+
+	            <div class="box filter galaxys20ultra titlesection">
+	            <div class="price">
+	                <p>Ks: 1,920,000</p>
+	            </div>  
+	            </div>
+
+	            <div class="box filter galaxys20plusram1 titlesection">
+	            <div class="price">
+	                <p>Ks: 1,950,000</p>
+	            </div>  
+	            </div>
+
+	            <div class="box filter galaxys20plusram2 titlesection">
+	            <div class="price">
+	                <p>Ks: 2,000,000</p>
+	            </div>  
+	            </div>
+
+            </div>
+
             <div class="product-card__divider"></div>        
             <div class="product-card-description">
               <a href="#">
@@ -3577,6 +3624,7 @@
 <script src="js/selectbox.js"></script>
 <script src="js/displaycheckedbox.js"></script>
 <script type="text/javascript" src="js/jquery.nice-select.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
   $('select').niceSelect();
