@@ -28,6 +28,22 @@ $(document).ready(function(){
 		})
 
 	});
+
+        $('.buttonselection2').click(function(){
+    var value = $(this).attr("data-filter");
+    if (value == "all") {
+      $(".filter2").show("1000");
+    }
+    else {
+      $(".filter2").not("."+value).hide("1000");
+      $(".filter2").filter("."+value).show("1000");
+    }
+
+    $("ul .buttonselection2").click(function(){
+      $(this).addClass('active').siblings().removeClass('active');
+    })
+
+  });
 		$('.slider').slick({
   dots: false,
   infinite: false,
