@@ -37,6 +37,11 @@ ul.thumb li img, ul.thumb2 li img, ul.thumb3 li img {
 	width: 100%;
 }
 
+.keekee {
+	font-size: 14px;
+	font-weight: bold;
+}
+
 ul.thumb3 li img {
 	height: 60px;
 }
