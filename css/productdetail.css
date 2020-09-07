@@ -34,7 +34,7 @@ ul.thumb li, ul.thumb2 li, ul.thumb3 li {
 }
 
 ul.thumb li img, ul.thumb2 li img, ul.thumb3 li img {
-	width: 100%;
+	width: 50px;
 }
 
 .keekee {
